@@ -1,0 +1,248 @@
+main {
+    width: 100%;
+    height: 1000px;
+    background: #f2f2f2;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+main section {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+}
+
+main section ul {
+    padding: 90px 0 0 0;
+    width: 350px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section ul li {
+    cursor: pointer;
+}
+
+main section ul li:nth-of-type(1) {
+    background: #c2c2c2;
+    cursor: default;
+}
+
+main section ul li:nth-of-type(2) {
+    background:  #f35a7a;
+}
+
+main section ul li {
+    border: 1px solid #f2f2f2;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    background: #fff;
+}
+
+#haslo {
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main section article {
+    margin-left: 50px;
+    width: 600px;
+}
+
+main input[type=submit] {
+    background: #f35a7a;
+    border: 0;
+    width: 177px;
+    line-height: 20px;
+}
+
+main input[type=submit]:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main section article h2 {
+    font-size: 30px;
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+
+main section article h3 {
+    margin: 20px 0 0 0;
+    letter-spacing: 1px;
+}
+
+main section article h3:nth-of-type(1) {
+    margin: 0;
+}
+
+main section article:nth-of-type(1) div form > *, main section article:nth-of-type(3) div form > * {
+    margin: 6px 0;
+}
+
+.books, main section article:nth-of-type(1) div, main section article:nth-of-type(3) div{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    flex-direction: column;
+}
+
+main section article:nth-of-type(1) {
+    height: 800px;
+}
+
+main section article:nth-of-type(1) p {
+    margin: 0;
+}
+
+main section article:nth-of-type(2) {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    min-height: 80%;
+}
+
+.books {
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 50%;
+    flex-direction: initial;
+}
+
+.books div {
+    width: 200px;
+    min-height: 275px;
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.books div a {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books div a img:hover {
+    cursor: pointer;
+    width: 135px;
+    height: 180px;
+}
+
+.books div aside {
+    width: 200px;
+    height: 50px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid gray;
+}
+
+.books div aside span {
+    font-size: 12px;
+    color: green;
+}
+
+.books div aside p span {
+    font-size: 32px;
+}
+
+.books div aside p {
+    display: block;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books div aside p span:hover {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+main section article:nth-of-type(3) {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    main section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        padding: 50px 0;
+    }
+    main section {
+        width: 600px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    main section ul {
+        padding: 0;
+    }
+    main section article {
+        width: 100%;
+        margin: 0;
+    }
+    main section article h2 {
+        padding: 40px 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        height: 1100px;
+    }
+    main section {
+        margin: 0 20px;
+    }
+    main section article {
+        width: 100%;
+    }
+    main section article:nth-of-type(1) {
+        height: 1100px;
+    }
+    .books {
+        flex-basis: 100%;
+    }
+}	
+
+@media only screen and (max-width: 500px) {	
+
+    .books { 
+        flex-wrap: initial;
+        flex-direction: column;
+        align-items: center;
+     }
+}								

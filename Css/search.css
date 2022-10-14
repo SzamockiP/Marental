@@ -1,0 +1,149 @@
+p {
+    margin: 6px 0;
+}
+
+main {
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+}
+
+main section {
+    height: auto;
+}
+
+main nav form{
+    width: 300px;
+    background: #f0f0f0;
+    padding: 10px 0 5px 10px;
+}
+
+main nav form h3 {
+    margin: 12px 0;
+}
+
+main nav form input[type=checkbox] {
+    margin-left: 10px;
+}
+
+main nav form input[type=text] {
+    line-height: 21px;
+}
+
+main nav form input[type=submit] {
+    background: #f35a7a;
+    border: none;
+    line-height: 25px;
+    width: 80px;
+}
+
+.paginator{
+    min-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-basis: 25%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 60px 0;
+}
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+  
+.pagination a.active {
+    background-color: #f35a7a;
+    color: white;
+    border: 1px solid #f35a7a;
+}
+  
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.book {
+    width: 200px;
+    min-height: 275px;
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.book a {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book a img:hover {
+    cursor: pointer;
+    width: 135px;
+    height: 180px;
+}
+
+.book h4 {
+    width: 200px;
+    height: 50px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    main {
+        width: 100%;
+    }
+
+    .paginator {
+        min-width: 675px;
+        flex-basis: 33%;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+
+
+    .paginator {
+        min-width: 450px;
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+
+    .paginator {
+        min-width: 200px;
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    main {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main nav {
+        margin-bottom: 20px;
+    }
+}

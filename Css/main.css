@@ -1,0 +1,509 @@
+* {
+    box-sizing: border-box;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+#dark {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1000;
+}
+
+header {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header section:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px dotted gray;
+}
+
+header section:nth-of-type(1) div {
+    margin: 4px 0;
+}
+
+header section:nth-of-type(1) div span {
+    font-size: 18px;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+header section:nth-of-type(1) p, header section:nth-of-type(1) a {
+    margin: 5px 0;
+}
+
+header section:nth-of-type(1) div span:nth-of-type(1) {
+    border-right: 1px solid #000;
+}
+
+header section:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+header section:nth-of-type(2) div:nth-of-type(1) {
+    margin: 0;
+    height: 64px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section:nth-of-type(2) div:nth-of-type(1) figure:nth-of-type(1) {
+    display: none;
+}
+
+header section:nth-of-type(2) div:nth-of-type(1) a img {
+    height: 64px;
+    width: auto;
+}
+
+header section:nth-of-type(2) form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section:nth-of-type(2) form input:nth-of-type(1) {
+    line-height: 40px;
+    font-size: 20px;
+    width: 700px;
+    border-radius: 3px;
+    border: 1px solid gray
+}
+
+header section:nth-of-type(2) form input:nth-of-type(2) {
+    line-height: 40px;
+    font-size: 30px;
+    background: #f35a7a;
+    border: 1px solid gray;
+    color: #fff;
+}
+
+header section:nth-of-type(2) div:nth-of-type(2)  {
+    font-size: 20px;
+}
+
+header nav {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    color: #fff;
+}
+
+header nav ul li {
+    width: 11.11%;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    background: #f35a7a;
+}
+
+header nav ul li a:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+header nav ul li a {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background: #f35a7a;
+    margin: 0 auto;
+    color: #fff;
+}
+
+footer section:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+footer section:nth-of-type(1) div:nth-of-type(1) {
+    padding-right: 20px;
+}
+
+footer section:nth-of-type(2) {
+    text-align: center;
+}
+footer section:nth-of-type(2) p{
+    margin: 0;
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 5px;
+}
+
+footer section:nth-of-type(3) {
+    text-align: center;
+}
+
+#login, #register {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    z-index: 1001;
+}
+
+#login {
+    display: none;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+    'h2 h2 h2'
+    'form form form'
+    'form form form'
+    'form form form'
+    'form form form'
+    'form form form'
+    'form form form'
+    'form form form';
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#login form {
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    '. span1 .'
+    '. input1 .'
+    '. span2 .'
+    '. input2 .'
+    '. input4 .'
+    '. blad .'
+    'input3 input3 input3';
+}
+
+#login form span, #login h2, #blad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login h2, #register h2 {
+    grid-area: h2;
+    background: #f35a7a;
+}
+#login form span:nth-of-type(1) {
+    grid-area: span1;
+}
+#login form input:nth-of-type(1) {
+    grid-area: input1;
+}
+#login form span:nth-of-type(2) {
+    grid-area: span2;
+}
+#login form input:nth-of-type(2) {
+    grid-area: input2;
+}
+#login form input:nth-of-type(3), #register form input:nth-of-type(5) {
+    grid-area: input3;
+    background: #f35a7a;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+#login form input:nth-of-type(3):hover, #register form input:nth-of-type(5):hover{
+    background: #000;
+    color: #fff;
+}
+#login form div {
+    grid-area: input4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register {
+    display: none;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    'rh2 rh2 rh2'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform'
+    'rform rform rform';
+    height: 400px;
+    width: 250px;
+    text-align: center;
+}
+
+#register form{
+    grid-area: rform;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+    '. rspan1 .'
+    '. rinput1 .'
+    '. rspan2 .'
+    '. rinput2 .'
+    '. rspan3 .'
+    '. rinput3 .'
+    '. rspan4 .'
+    '. rinput4 .'
+    '. rinput6 .'
+    '. blad .'
+    'rinput5 rinput5 rinput5';
+}
+#register h2 {
+    grid-area: rh2;
+}
+#register span, #register h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#register form input:nth-of-type(1) {
+    grid-area: rinput1;
+}
+#register form input:nth-of-type(2) {
+    grid-area: rinput2;
+}
+#register form input:nth-of-type(3) {
+    grid-area: rinput3;
+}
+#register form input:nth-of-type(4) {
+    grid-area: rinput4;
+}
+#register form input:nth-of-type(5) {
+    grid-area: rinput5;
+}
+#register form div {
+    grid-area: rinput6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#register form span:nth-of-type(1){
+    grid-area: rspan1;
+}
+#register form span:nth-of-type(2){
+    grid-area: rspan2;
+}
+#register form span:nth-of-type(3){
+    grid-area: rspan3;
+}
+#register form span:nth-of-type(4){
+    grid-area: rspan4;
+}
+
+.blad {
+    display: block;
+    grid-area: blad;
+    color: red;
+}
+
+#menu {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: 1s;
+    z-index: 1001;
+}
+
+#menu ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    font-size: 30px;
+    padding: 8px 10px;
+    display: block;
+    display: flex;
+    align-items: center;
+    background: #f35a7a;
+    color: #fff;
+    padding-left: 40px;
+    border-bottom: 1px solid #fff;
+}
+
+#menu ul li:nth-last-of-type(1) {
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    header{
+        width: 100%;
+    }
+
+    header section:nth-of-type(2) form input:nth-of-type(1) {
+        width: 500px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    header nav ul li:nth-of-type(2) a {
+        font-size: 13px;
+    }
+    footer section:nth-of-type(2) p{
+         margin: 0;
+         width: 100%;
+    }
+    footer div {
+        width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 970px) {
+
+    header section:nth-of-type(2) form input:nth-of-type(1) {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    header section:nth-of-type(2) div:nth-of-type(1) figure:nth-of-type(1) {
+        display: inline;
+    }
+
+    header section:nth-of-type(2) div:nth-of-type(1) {
+        justify-content: start;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header section:nth-of-type(2) div:nth-of-type(2) {
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    header section:nth-of-type(2) div:nth-of-type(2) span {
+        display: none;
+    }
+
+    header {
+        width: 100%
+    }
+
+    header section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'logo koszyk'
+        'szukaj szukaj';
+    }
+    header section:nth-of-type(2) div:nth-of-type(1)  {
+        grid-area: logo;
+        justify-content: start;
+    }
+
+    header section:nth-of-type(2) div:nth-of-type(2)  {
+        grid-area: koszyk;
+    }
+
+    header section:nth-of-type(2) form {
+        grid-area: szukaj;
+    }
+
+    header section:nth-of-type(2) form input:nth-of-type(1) {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header section:nth-of-type(2) form {
+        padding: 0 10px;
+    }
+    header section:nth-of-type(2) div:nth-of-type(1) figure {
+        margin: 0;
+        padding: 0 10px;
+    }
+    footer section:nth-of-type(1) {
+        flex-direction: column;
+    }
+    footer section:nth-of-type(1) div:nth-of-type(1) {
+        padding-right: 0;
+    }
+    footer section:nth-of-type(1) div{
+        display: flex;
+        justify-content: center;
+    }
+}		

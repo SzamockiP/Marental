@@ -1,0 +1,222 @@
+main {
+    padding: 20px 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+main p {
+    margin: 8px 0;
+}
+
+main section:nth-of-type(1) {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+main section:nth-of-type(1) section {
+    display: block;
+    width: 300px;
+}
+
+.error {
+    color: red;
+}
+
+main section:nth-of-type(1) div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section:nth-of-type(1) section div h1 {
+    font-size: 40px;
+}
+
+main section:nth-of-type(1) section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+main section:nth-of-type(1) section p {
+    text-align: center;
+}
+
+main section:nth-of-type(1) section h3 a {
+    text-decoration: none;
+    color: #f35a7a;
+}
+
+main section:nth-of-type(1) section h3 a:hover {
+    cursor: pointer;
+}
+
+main section:nth-of-type(1) section h3 {
+    color: #f35a7a;
+}
+
+main section:nth-of-type(1) section h3 span:hover {
+    cursor: pointer;
+}
+
+main section:nth-of-type(1) article {
+    width: 800px;
+    height: 400px;
+    padding: 0 25px;
+}
+
+main section:nth-of-type(2) {
+    width: 1200px;
+    margin: 0 auto;
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(2) figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section:nth-of-type(2) h2 {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main section:nth-of-type(2) nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+main section:nth-of-type(2) nav figure a {
+    width: 90px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-of-type(2) nav figure p a {
+    width: auto;
+    height: auto;
+}
+
+main section:nth-of-type(2) nav figure a img:hover {
+    cursor: pointer;
+    width: 80px;
+    height: 108px;
+}
+
+main section:nth-of-type(2) nav p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    main section:nth-of-type(1) {
+        width: 100%;
+    }
+
+    main section:nth-of-type(1) article {
+        margin-top: 10px;
+        width: 90%;
+        height: auto;
+    }
+
+    main section:nth-of-type(2) {
+        margin-top: 20px;
+        width: 1000px;
+    }
+
+    main section:nth-of-type(2) nav figure:nth-of-type(6) {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1100px) {
+
+    main section:nth-of-type(2) {
+        justify-content: center;
+    }
+
+    main section:nth-of-type(2) nav:nth-of-type(2) {
+        display: none;
+    }
+    
+    main section:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    main section:nth-of-type(2) {
+        width: 800px;
+    }
+
+    main section:nth-of-type(2) nav figure:nth-of-type(5) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    main section:nth-of-type(2) {
+        width: 600px;
+    }
+
+    main section:nth-of-type(2) nav figure:nth-of-type(4) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    main section:nth-of-type(2) {
+        width: 400px;
+    }
+
+    main section:nth-of-type(2) nav figure:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    main section:nth-of-type(2) nav:nth-of-type(1) {
+        width: 100%;
+    }
+
+    main section:nth-of-type(2) nav:nth-of-type(1) figure {
+        margin: 16px auto;
+    }
+} 
+
+@media only screen and (max-width: 400px) {
+
+    main section:nth-of-type(2) {
+        width: 200px;
+    }
+
+    main section:nth-of-type(2) nav figure:nth-of-type(2) {
+        display: none;
+    }
+}
