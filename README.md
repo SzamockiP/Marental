@@ -13,3 +13,7 @@ Celem naszego projektu było stworzenie wypożyczalni mang dla młodzieży oraz 
 = Udziałowcy projektu =
 
 Projekt jest skierowany do młodzieży jak i osób starszych, którzy chcą przeczytać fizyczną książkę bez potrzeby kupowania jej oraz nie przeszkadza im to że ktoś jej wcześniej używał.
+
+= Rozkład pracy =
+
+Wszystkie moje zadania, które wykonywałem, są zapisane w dzienniku praktyk w folderze Docs.
