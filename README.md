@@ -1,19 +1,14 @@
-# Marental
-Website about renting books.
+<h1>Marental</h1>
+Marental is a website about renting books, specifically manga. The idea for the project was to create an online manga rental service inspired by online bookstores. The project was successfully realized by a group of developers who worked together to plan the website's design and functionality.
 
-= Pomysł na projekt =
+<h2>Project Goals</h2>
+The main goal of the project was to create a manga rental service for both young and adult audiences. The project helped the developers hone their teamwork skills, which is crucial in the programming industry. Additionally, the project was an opportunity to improve coding skills and gain professional experience.
 
-Projekt powstał w myśli stworzenia internetowej wypożyczalni mang. Wraz z zaplanowaniem wyglądu jak i funkcjonalności portalu, nasza grupa przystąpiła do pracy.Stworzenie projektu było inspirowane sklepami internetowymi z książkami.Wspólnie opracowany projekt został pomyślnie zrealizowany według wspólnych ustaleń członków naszej grupy.  
-Pomysł na projekt wziął się z kreatywnego myślenia naszych członków oraz z pomocy wcześniej wspomnianego źródła internetowego. 
- 
-= Cel projektu =
+<h2>Target Audience</h2>
+The website is designed for anyone who wants to read a physical book without having to purchase it, and who does not mind using a book that has been previously rented.
 
-Celem naszego projektu było stworzenie wypożyczalni mang dla młodzieży oraz dorosłych. Realizacja projektu pomogła nam w szlifowaniu umiejętności pracy w grupie, która jest ważna w naszym zawodzie (tj. technik programista).  Przeznaczeniem realizacji tego projektu było podnoszenie umiejętności w kodowaniu. Zadaniem tej pracy było również zdanie praktyk zawodowych.
- 
-= Udziałowcy projektu =
+<h2>Work Breakdown</h2>
+All tasks completed by the development team are documented in the practice log, which can be found in the Docs folder.
 
-Projekt jest skierowany do młodzieży jak i osób starszych, którzy chcą przeczytać fizyczną książkę bez potrzeby kupowania jej oraz nie przeszkadza im to że ktoś jej wcześniej używał.
-
-= Rozkład pracy =
-
-Wszystkie moje zadania, które wykonywałem, są zapisane w dzienniku praktyk w folderze Docs.
+<h2>Contributors</h2>
+This project was created by a group of developers who collaborated to bring the idea to life.
