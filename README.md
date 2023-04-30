@@ -5,8 +5,12 @@
 <h2>Project Overview</h2>
 <p>Our goal was to create a platform where users could rent manga books and read them without having to purchase them. We also aimed to give our users the ability to add and remove rented items, create user accounts, and communicate with the server for registration and login.</p>
 
+![Main menu](https://cdn.discordapp.com/attachments/636278665151512635/1102365640133718046/ss1.png)
+
 <h2>Features</h2>
 <p>Our web application is self-sufficient, which means that users don't need to install any software on their computers to use it. All they need is an internet connection and a web browser.</p>
+
+![Rent book](https://cdn.discordapp.com/attachments/636278665151512635/1102365640385380423/ss2.png)
 
 <h3>Here are some of the key features of our web application:</h3>
 <ul>
@@ -15,6 +19,8 @@
 <li>Create user accounts</li>
 <li>Communicate with the server for registration and login</li>
 </ul>
+
+![User Panel](https://cdn.discordapp.com/attachments/636278665151512635/1102365640825786388/ss3.png)
 
 <h2>Tools and Technologies</h2>
 <p>We utilized various tools and technologies to create Marental. Here are some of the tools and technologies we used:</p>
